@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio</title>
+  
+  <!-- Referência ao Bootstrap CDN -->
+  <!-- Esse link importa o CSS do Bootstrap, permitindo usar suas classes e componentes prontos -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navbar (Menu de Navegação) -->
+  <!-- O componente navbar cria um menu de navegação fixo no topo da página -->
+  <!-- Ele é responsivo, ajustando-se para uma versão 'hambúrguer' em telas menores -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <!-- Título da página (pode ser o nome ou logotipo do desenvolvedor) -->
+      <a class="navbar-brand" href="#">Meu Portfólio</a>
+      
+      <!-- Botão de colapso da navbar para telas pequenas (mostra o ícone de menu) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- Itens da navbar, como links para diferentes seções -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre-mim">Sobre Mim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projetos">Projetos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seção Sobre Mim -->
+  <!-- A tag 'section' é usada para definir uma parte específica da página -->
+  <!-- A classe 'py-5' adiciona espaçamento vertical (padding) à seção e 'bg-white' aplica o fundo branco -->
+  <section id="sobre-mim" class="py-5 bg-white">
+    <div class="container text-center">
+      <!-- Título da seção, centralizado com Bootstrap -->
+      <h2 class="mb-4">Varios Carros</h2>
+      <!-- Texto explicativo sobre o desenvolvedor, usando classes de texto Bootstrap -->
+      <p class="lead">Carros</p>
+    </div>
+  </section>
+
+  <!-- Seção Projetos -->
+  <!-- 'bg-light' adiciona um fundo cinza claro e 'py-5' controla o espaçamento vertical -->
+  <section id="projetos" class="py-5 bg-light">
+    <div class="container">
+      <!-- Título da seção Projetos -->
+      <h2 class="text-center mb-5"> Projetinhos</h2>
+      <div class="row">
+        <!-- Grid de 3 colunas: 'col-lg-4' ajusta cada coluna a 4 unidades em telas grandes (máximo de 12 colunas), 'col-md-6' ajusta para 2 colunas em telas médias -->
+        
+        <!-- Projeto 1 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <!-- Imagem ilustrativa do projeto com tamanho fixo -->
+            <img src="lancer.jpg" class="card-img-top" alt="Projeto 1">
+            <div class="card-body">
+              <!-- Título e descrição do projeto -->
+              <h5 class="card-title">Lancer evo</h5>
+              <p class="card-text">Projetinho feito em 2019, com varias parafernalhas e turbinado</p>
+            </div>
+            <!-- Botão para acessar o projeto -->
+            <div class="card-footer text-center">
+              <a href="#" class="btn btn-primary">Ver Projeto</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Projeto 2">
+            <div class="card-body">
+              <h5 class="card-title">Projeto 2</h5>
+              <p class="card-text">Descrição do projeto 2, mostrando as principais tecnologias utilizadas e desafios enfrentados.</p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#" class="btn btn-primary">Ver Projeto</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Projeto 3">
+            <div class="card-body">
+              <h5 class="card-title">Projeto 3</h5>
+              <p class="card-text">Descrição do projeto 3, mostrando as principais tecnologias utilizadas e desafios enfrentados.</p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#" class="btn btn-primary">Ver Projeto</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!-- Rodapé da página com fundo escuro e texto branco. Inclui os direitos autorais. -->
+  <footer class="py-4 bg-dark text-white text-center">
+    <div class="container">
+      <p class="mb-0">&copy; 2024 Meu Nome. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Referência ao JavaScript do Bootstrap -->
+  <!-- Esse script habilita a funcionalidade interativa, como o menu colapsável (navbar) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
